@@ -1,0 +1,57 @@
+{
+  "name": "kubeecms/kcms-client-ui",
+  "type": "wordpress-theme",
+  "license": "MIT",
+  "description": "Client UI",
+  "homepage": "https://github.com/KubeeCMS/KCMS-Client-UI/",
+  "authors": [
+    {
+      "name": "Kubee",
+      "email": "kubee@kubeecms.com",
+      "homepage": "https://github.com/KubeeCMS/"
+    },
+    {
+      "name": "Romeo Covaci",
+      "email": "romeo.covaci@kubeecms.com",
+      "homepage": "https://github.com/KubeeCMS/"
+    }
+  ],
+  "keywords": [
+    "kubeecms"
+  ],
+  "support": {
+    "issues": "https://github.com/KubeeCMS/KCMS-Client-UI/issues",
+    "forum": "https://github.com/KubeeCMS/"
+  },
+  "autoload": {
+    "psr-4": {
+      "Roots\\Bedrock\\": "/"
+    }
+  },
+  "require": {
+    "php": "^7.3|^8.0"
+  },
+  "require-dev": {
+    "filp/whoops": "^2.9",
+    "squizlabs/php_codesniffer": "^3.5"
+  },
+  "suggest": {
+    "log1x/sage-directives": "A collection of useful Blade directives for WordPress and Sage (^1.0).",
+    "log1x/sage-svg": "A useful SVG directive for inlining SVG's within Blade views (^1.0)."
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "scripts": {
+    "lint": [
+      "phpcs --extensions=php --standard=PSR12 app config"
+    ],
+    "post-autoload-dump": [
+      "Roots\\Acorn\\ComposerScripts::postAutoloadDump"
+    ]
+  }
+}
