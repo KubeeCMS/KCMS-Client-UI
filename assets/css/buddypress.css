@@ -12857,7 +12857,12 @@ ul#bp-message-thread-list .group-messages-highlight .bp-message-content-wrap blo
       text-align: right;
       border-top: 1px solid #ebe9e6;
       width: 100%;
-      margin-top: 10px; } }
+      margin-top: 10px; }
+  .bp-messages-content-wrapper #messages-post-document-uploader.open,
+  .bp-messages-content-wrapper #messages-post-media-uploader.open,
+  .bp-messages-content-wrapper #messages-post-video-uploader.open {
+    height: -webkit-calc(100% - 214px);
+    height: calc(100% - 214px); } }
 
 #buddypress .notifications-header {
   -webkit-box-align: center;

@@ -1,8 +1,8 @@
 === BuddyBoss Theme ===
 Contributors: BuddyBoss
 Requires at least: 4.9.1
-Tested up to: 5.6.1
-Version: 1.6.4.1
+Tested up to: 5.7
+Version: 1.6.5
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -18,6 +18,19 @@ BuddyBoss Theme is a community theme for the BuddyBoss Platform.
 4. Upload the file 'buddyboss-theme-child.zip'
 
 == Changelog ==
+
+= 1.6.5 =
+* Forums - Fixed closed discussion reply issue shows two instances on photo upload
+* Messages - Fixed chat responsive issue
+* LearnDash - Fixed compatibility issues with LearnDash 3.4
+* LearnDash - Fixed 'Instructor Role' plugin compatibility issue with Courses page
+* MemberPress - Fixed checkout page critical bug
+* WooCommerce - Fixed minor alignment issue with password show/hide icon
+* WooCommerce - Fixed lost password page permission on Private Website settings
+* GamiPress - Fixed compatibility issues with 'GamiPress - BuddyBoss integration'
+* Elementor - Fixed issue with the Video elements not playing
+* Elementor - Fixed members widget height issue
+* Elementor - Fixed header issue on BuddyBoss Mobile App
 
 = 1.6.4.1 =
 * Messages - Improved Group Send Private Message screen

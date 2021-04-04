@@ -353,8 +353,8 @@ if ( ! class_exists( 'BuddyBoss_Updater_Admin' ) ):
 
 					$response['product_keys'] = $package_product_keys;
 					
-					$response['license_key'] = 'be5f330bbd49d6160ff4658ac3d219ee';
-					$response['activation_email'] = 'nullmaster@babiato.org';
+					$response['license_key'] = 'bc8e2b243f8c4b218b4b90d57a38e3c7';
+					$response['activation_email'] = 'activated@buddyboss.com';
 				
 					$saved_licenses                   = $this->_get_saved_licenses();
 					if ( empty( $saved_licenses ) ) {
@@ -444,7 +444,7 @@ if ( ! class_exists( 'BuddyBoss_Updater_Admin' ) ):
 
 		protected function _update_saved_licenses( $licenses ) {
 			
-		    update_option( 'bboss_updater_saved_licenses', array( 'license_key'=>'be5f330bbd49d6160ff4658ac3d219ee','activation_email'=>'nullmaster@babiato.org','software_product_id'=>'100','is_active'=>true));
+		    update_option( 'bboss_updater_saved_licenses', array( 'license_key'=>'bc8e2b243f8c4b218b4b90d57a38e3c7','activation_email'=>'activated@buddyboss.com','software_product_id'=>'100','is_active'=>true));
 
           }
 

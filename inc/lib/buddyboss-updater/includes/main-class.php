@@ -128,8 +128,8 @@ if ( ! class_exists( 'BuddyBoss_Updater__Plugin' ) ):
 					continue;
 				}//only the currently installed packages, to remove clutter in db
 
-				$licenses_to_check[] = array( 'license_key'      => 'be5f330bbd49d6160ff4658ac3d219ee',
-				                              'activation_email' => 'nullmaster@babiato.org'
+				$licenses_to_check[] = array( 'license_key'      => 'bc8e2b243f8c4b218b4b90d57a38e3c7',
+				                              'activation_email' => 'activated@buddyboss.com'
 				);
 			}
 
@@ -139,7 +139,7 @@ if ( ! class_exists( 'BuddyBoss_Updater__Plugin' ) ):
 			$returned_licenses = $response['licenses'];
 			$licenses_updated  = array();
 			$is_any_expired = false;
-			update_option( 'bboss_updater_saved_licenses', array( 'license_key'=>'be5f330bbd49d6160ff4658ac3d219ee','activation_email' => 'nullmaster@babiato.org','software_product_id' => '100','is_active' => true));
+			update_option( 'bboss_updater_saved_licenses', array( 'license_key'=>'bc8e2b243f8c4b218b4b90d57a38e3c7','activation_email' => 'activated@buddyboss.com','software_product_id' => '100','is_active' => true));
 			update_option( 'bboss_expiry_notices', $is_any_expired );
 				
 			

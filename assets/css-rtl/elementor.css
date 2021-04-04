@@ -5309,13 +5309,9 @@ html .bb-activity .activity-lists.item-list.elementor-activity-widget.grid {
     max-width: 66px; }
 
 /** bb members widget */
-.elementor-col-33 .elementor-widget-bbp-members,
-.elementor-col-33 .elementor-widget-bbp-members .elementor-widget-container,
-.elementor-col-33 .bb-members, .elementor-col-50 .elementor-widget-bbp-members,
-.elementor-col-50 .elementor-widget-bbp-members .elementor-widget-container,
-.elementor-col-50 .bb-members, .elementor-col-25 .elementor-widget-bbp-members,
-.elementor-col-25 .elementor-widget-bbp-members .elementor-widget-container,
-.elementor-col-25 .bb-members {
+.elementor-widget-bbp-members,
+.elementor-widget-bbp-members .elementor-widget-container,
+.bb-members {
   height: 100%; }
 
 .bb-members {

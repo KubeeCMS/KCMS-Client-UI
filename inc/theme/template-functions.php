@@ -1717,6 +1717,12 @@ if ( ! function_exists( 'bb_theme_remove_header_footer_for_buddyboss_app' ) ) {
 			remove_action( THEME_HOOK_PREFIX . 'footer', 'buddyboss_theme_footer_area' );
 			remove_action( THEME_HOOK_PREFIX . 'before_page', 'buddyboss_theme_buddypanel' );
 
+			if( defined('ELEMENTOR_VERSION') ) {
+				remove_action( THEME_HOOK_PREFIX . 'header', array( buddyboss_theme()->elementor_pro_helper(), 'do_header' ), 0 );
+				remove_action( THEME_HOOK_PREFIX . 'footer', array( buddyboss_theme()->elementor_pro_helper(), 'do_footer' ), 0 );
+				remove_action( THEME_HOOK_PREFIX . 'before_header', array( buddyboss_theme()->elementor_pro_helper(), 'remove_theme_header_class' ), 0 );
+			}
+
 			/* Remove Header Class */
 			add_filter(
 				'body_class',
